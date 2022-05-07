@@ -14,7 +14,7 @@
             </header>
             <article class="principal">
                 <div class="box">
-                    <a href="Lista.php"><strong>Listar</strong></a>
+                    <a href="Listar.php"><strong>Listar</strong></a>
                 <a href="cadastro.php"><strong>Cadastrar</strong></a>
                 
 

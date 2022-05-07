@@ -3,6 +3,9 @@ body{
     width: 100%;
     
 }
+.lista{
+    padding: 10px;
+}
 main{
     height: 100%;
 }
@@ -42,7 +45,7 @@ header{
 }
 .box{
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
     
 }
 .box a{
