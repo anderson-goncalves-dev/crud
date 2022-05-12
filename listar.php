@@ -9,6 +9,7 @@
         <title>Lista de alunos</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="estilo.css">
+        
     </header>
     <body>
         <main class="container">
@@ -23,24 +24,41 @@
                 <a href="cadastro.php"><strong>Cadastrar</strong></a>
             
             <h1>Lista de alunos</h1>
-    <div class="lista">
+    
+    <div>
+     <table class="tabela">
+         <thead>
+             <tr>
+                 <th>ID</th>
+                 <th>Nome</th>
+                 <th>Idade</th>
+                 <th>Telefone</th>
+                 <th>Endereço</th>
+             </tr>
+        </thead>
+        <tbody>        
     <?php 
-        $result_msg_cont="SELECT *FROM alunos";
+    
+    $result_msg_cont="SELECT *FROM alunos";
 
-        $resultado_msg_cont = $db->prepare($result_msg_cont);
+    $resultado_msg_cont = $db->prepare($result_msg_cont);
 
-        $resultado_msg_cont->execute();
+    $resultado_msg_cont->execute();
 
-        while($row_msg_cont = $resultado_msg_cont->fetch(PDO::FETCH_ASSOC)){
-            echo "--ID: " .  $row_msg_cont['id_aluno'] . "<br>";
-            echo "--Nome: " .  $row_msg_cont['nome'] . "<br>";
-            echo "--Idade: " .  $row_msg_cont['idade'] . "<br>";
-            echo "--Telefone: " .  $row_msg_cont['telefone'] . "<br>";
-            echo "--CPF: " .  $row_msg_cont['cpf'] . "<br>";
-            echo "--Endereço: " .  $row_msg_cont['endereco'] . "<br><hr><br>";
-        }
-    ?>
-                
+    $row_msg_cont = $resultado_msg_cont->fetchAll(PDO::FETCH_ASSOC);
+        foreach($row_msg_cont as $row){
+            echo "<tr>";
+            echo("<td>{$row['id_aluno']}</td>");
+            echo("<td>{$row['nome']}</td>");
+            echo("<td>{$row['idade']}</td>");
+            echo("<td>{$row['telefone']}</td>");
+            echo("<td>{$row['endereco']}</td>");
+            echo "</tr>";
+        }    
+    
+?>
+        </tbody>
+    </table>
     </div>
                
             </article>

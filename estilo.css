@@ -1,6 +1,7 @@
 body{
     margin: 0;
     width: 100%;
+    background-color: rgb(116, 113, 119);
     
 }
 .lista{
@@ -39,10 +40,7 @@ header{
     height: 100%;
     
 }
-.principal{
-    background-color: rgb(116, 113, 119);
-    
-}
+
 .box{
     text-align: center;
     margin-top: 10%;
@@ -56,4 +54,28 @@ header{
 }
 .box a:hover{
     color: rgb(59, 56, 63);
+}
+table{
+    padding: 2px;
+    border: 1px solid black;
+}
+td, th{
+    border:1px solid;
+    padding: 3px;
+}
+article{
+    margin: 5px 20px;
+
+}
+.principal a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+    padding-right: 5px;
+}
+.principal a:hover{
+    color: rgb(59, 56, 63);
+}
+h1{
+    font-size: 2em;
 }

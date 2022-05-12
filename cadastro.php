@@ -30,13 +30,13 @@
          <label for="nome">Nome</label>
          <input type="text" name="nome">
          <br><br>
-         <label for="idade">idade</label>
+         <label for="idade">Idade</label>
          <input type="number" name="idade">
          <br><br>
          <label for="cpf">CPF</label>
          <input type="text" name="cpf">
          <br><br>
-         <label for="telefone">telefone</label>
+         <label for="telefone">Telefone</label>
          <input type="text" name="telefone">
          <br><br>
          <label for="endereco">Endereço</label>
