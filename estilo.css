@@ -2,7 +2,7 @@ body{
     margin: 0;
     width: 100%;
     background-color: rgb(116, 113, 119);
-    
+   
 }
 .lista{
     padding: 10px;
@@ -46,12 +46,8 @@ header{
     margin-top: 10%;
     
 }
-.box a{
-    color: rgb(245, 245, 245);
-    padding: 10px;
-    text-decoration: none;
-    font-size: 30px;
-}
+
+
 .box a:hover{
     color: rgb(59, 56, 63);
 }
@@ -69,7 +65,7 @@ article{
 }
 .principal a{
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: #fff;
     padding-right: 5px;
 }
@@ -78,4 +74,10 @@ article{
 }
 h1{
     font-size: 2em;
+}
+.box a{
+    color: rgb(245, 245, 245);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 3em;
 }
